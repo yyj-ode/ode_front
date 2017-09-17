@@ -1,0 +1,46 @@
+ <header>
+    <div class="headtop"></div>
+    <div class="contenttop">
+      <div class="logo f_l">���̸�ĸ��˲���</div>
+      <div class="search f_r">
+        <form action="/e/search/index.php" method="post" name="searchform" id="searchform">
+          <input name="keyboard" id="keyboard" class="input_text" value="������ؼ���" style="color: rgb(153, 153, 153);" onfocus="if(value=='������ؼ���'){this.style.color='#000';value=''}" onblur="if(value==''){this.style.color='#999';value='������ؼ���'}" type="text">
+          <input name="show" value="title" type="hidden">
+          <input name="tempid" value="1" type="hidden">
+          <input name="tbname" value="news" type="hidden">
+          <input name="Submit" class="input_submit" value="����" type="submit">
+        </form>
+      </div>
+      <div class="blank"></div>
+      <nav>
+        <div  class="navigation">
+          <ul class="menu">
+            <li><a href="index.html">��ҳ</a></li>
+            <li><a href="#">������</a>
+              <ul>
+                <li><a href="about.html">���˼��</a></li>
+                <li><a href="listpic.html">�ҵ����</a></li>
+                <li><a href="dream.html">�ҵ�����</a> </li>
+                <li><a href="film.html">��Щ��Ӱ</a> </li>
+              </ul>
+            </li>
+            <li><a href="feel.html">����</a>
+            <li><a href="circle.html">����Ȧ</a> </li>
+            <li><a href="work.html">����</a> </li>
+            <li><a href="experience.html">����</a> </li>
+          </ul>
+        </div>
+      </nav>
+      <SCRIPT type=text/javascript>
+	// Navigation Menu
+	$(function() {
+		$(".menu ul").css({display: "none"}); // Opera Fix
+		$(".menu li").hover(function(){
+			$(this).find('ul:first').css({visibility: "visible",display: "none"}).slideDown("normal");
+		},function(){
+			$(this).find('ul:first').css({visibility: "hidden"});
+		});
+	});
+</SCRIPT> 
+    </div>
+  </header>
